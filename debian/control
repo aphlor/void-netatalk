@@ -5,8 +5,8 @@ Maintainer: Rob Andrews <rob@aphlor.org>
 Build-Depends: debhelper (>= 9), autotools-dev, libpam0g-dev, libdb5.3-dev, pkg-config, libacl1-dev, libkrb5-dev, libldap2-dev, libavahi-client-dev, libwrap0-dev, libtracker-sparql-1.0-dev, libtracker-miner-1.0-dev, libgcrypt20-dev, libmysqlclient-dev, libcrack2-dev, libssl-dev, libdbus-1-dev, libdbus-glib-1-dev, libevent-dev, libtdb-dev
 Standards-Version: 3.9.5
 Homepage: http://netatalk.sourceforge.net/
-#Vcs-Git: git://anonscm.debian.org/collab-maint/netatalk.git
-#Vcs-Browser: http://anonscm.debian.org/?p=collab-maint/netatalk.git;a=summary
+Vcs-Git: https://github.com/aphlor/void-netatalk.git
+Vcs-Browser: https://github.com/aphlor/void-netatalk
 
 Package: netatalk
 Architecture: any
