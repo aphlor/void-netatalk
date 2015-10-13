@@ -1,0 +1,48 @@
+Source: netatalk
+Section: net
+Priority: extra
+Maintainer: Rob Andrews <rob@aphlor.org>
+Build-Depends: debhelper (>= 9), autotools-dev, libpam0g-dev, libdb5.3-dev, pkg-config, libacl1-dev, libkrb5-dev, libldap2-dev, libavahi-client-dev, libwrap0-dev, libtracker-sparql-1.0-dev, libtracker-miner-1.0-dev, libgcrypt20-dev, libmysqlclient-dev, libcrack2-dev, libssl-dev, libdbus-1-dev, libdbus-glib-1-dev, libevent-dev, libtdb-dev
+Standards-Version: 3.9.5
+Homepage: http://netatalk.sourceforge.net/
+#Vcs-Git: git://anonscm.debian.org/collab-maint/netatalk.git
+#Vcs-Browser: http://anonscm.debian.org/?p=collab-maint/netatalk.git;a=summary
+
+Package: netatalk
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${perl:Depends}
+Recommends: avahi-daemon, tracker
+Description: Apple Filing Protocol server
+ netatalk is an open source implementation of the Apple Filing Protocol server
+ for Linux, Unix and BSD systems.
+ .
+ Apple Filing Protocol is a proprietary network protocol for file services on
+ machines running Mac OS.
+ .
+ This package contains binaries for running an AFP server.
+
+Package: libatalk16
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: AppleTalk protocol library
+ netatalk is an open source implementation of the Apple Filing Protocol server
+ for Linux, Unix and BSD systems.
+ .
+ Apple Filing Protocol is a proprietary network protocol for file services on
+ machines running Mac OS.
+ .
+ This package contains a shared library for the AppleTalk protocol.
+
+Package: libatalk-dev
+Architecture: any
+Section: libdevel
+Priority: optional
+Depends: ${shlibs:Depends}, ${misc:Depends}, libatalk16 (= ${binary:Version})
+Description: AppleTalk protocol library (development files)
+ netatalk is an open source implementation of the Apple Filing Protocol server
+ for Linux, Unix and BSD systems.
+ .
+ Apple Filing Protocol is a proprietary network protocol for file services on
+ machines running Mac OS.
+ .
+ This package contains development files for the AppleTalk protocol library.

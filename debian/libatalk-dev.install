@@ -1,0 +1,4 @@
+usr/bin/netatalk-config
+usr/include/atalk/*
+usr/lib/*/libatalk.so
+usr/share/aclocal/netatalk.m4
