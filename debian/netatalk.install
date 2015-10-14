@@ -1,5 +1,5 @@
 etc/dbus-1/system.d/netatalk-dbus.conf
-etc/netatalk/
+etc/netatalk/*.conf
 etc/pam.d/netatalk
 lib/systemd/system/netatalk.service
 usr/bin/ad
