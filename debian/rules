@@ -40,6 +40,7 @@ override_dh_auto_configure:
 		--with-tdb=no
 
 # we don't need libtool files or static versions of the uam plugins
-override_dh_install:
-	rm -fv debian/install/*/usr/lib/*/netatalk/*.la
-	rm -fv debian/install/*/usr/lib/*/netatalk/*.a
+# removed after split to multiple packages
+#override_dh_install:
+#	rm -fv debian/install/*/usr/lib/*/netatalk/*.la
+#	rm -fv debian/install/*/usr/lib/*/netatalk/*.a
