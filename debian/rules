@@ -18,7 +18,7 @@ include /usr/share/dpkg/default.mk
 
 # main packaging script based on dh7 syntax
 %:
-	dh $@  --with autotools-dev
+	dh $@ --with autotools-dev --parallel
 
 # change the configure options so we use system packages and not builtins
 override_dh_auto_configure:
