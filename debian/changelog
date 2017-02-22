@@ -1,3 +1,15 @@
+netatalk (3.1.10-1~void8+0) unstable; urgency=low
+
+  * New upstream release (3.1.10)
+  * Update control dependencies (libmysqlclient-dev -> libmariadbclient-dev)
+  * Added dep for libmariadbclient-dev-compat until mysql_config correctly
+    returns the correct library for linking
+  * Change dep for libssl-dev to libssl1.0-dev until upstream is compatible
+    with openssl 1.1.x
+  * Fix uscan watch file so it stops picking up netatalk-stp4
+
+ -- Rob Andrews <rob@aphlor.org>  Wed, 22 Feb 2017 23:23:05 +0000
+
 netatalk (3.1.7-2~void8+0) unstable; urgency=low
 
   * Fix installation of source and headers into /etc/netatalk
